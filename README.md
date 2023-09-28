@@ -19,4 +19,5 @@ git clone
   
 6. Create a pull request
 7. Review and merge: 
+Git flow best practice
 ```
