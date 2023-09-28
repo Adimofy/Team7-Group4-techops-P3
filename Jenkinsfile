@@ -25,5 +25,11 @@ pipeline {
                 sh 'sudo systemctl'
             }
         }
+         stage('gilbert') {
+            steps {
+                sh 'ps -ef'
+                sh 'sudo systemctl'
+            }
+        }
     }
 }
