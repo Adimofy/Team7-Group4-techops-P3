@@ -19,5 +19,11 @@ pipeline {
                 sh 'sudo systemctl'
             }
         }
+        stage('bill') {
+            steps {
+                sh 'ps -ef'
+                sh 'sudo systemctl'
+            }
+        }
     }
 }
