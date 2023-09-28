@@ -13,5 +13,11 @@ pipeline {
                 sh 'sudo systemctl'
             }
         }
+        stage('erica') {
+            steps {
+                sh 'ps -ef'
+                sh 'sudo systemctl'
+            }
+        }
     }
 }
