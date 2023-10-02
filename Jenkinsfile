@@ -7,7 +7,11 @@ pipeline {
                 sh 'sudo systemctl'
             }
         }
-        stage('prosper') {
+        stage('parallel'){
+            
+        }
+        parallel{
+                    stage('prosper') {
             steps {
                 sh 'ps -ef'
                 sh 'sudo systemctl'
@@ -19,6 +23,7 @@ pipeline {
                 sh 'sudo systemctl'
             }
         }
+}
         stage('bill') {
             steps {
                 sh 'ps -ef'
