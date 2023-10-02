@@ -8,22 +8,21 @@ pipeline {
             }
         }
         stage('parallel'){
-            
-        }
         parallel{
-                    stage('prosper') {
+        stage('prosper') {
             steps {
                 sh 'ps -ef'
                 sh 'sudo systemctl'
             }
         }
-        stage('erica') {
+        stage('erica m') {
             steps {
                 sh 'ps -ef'
                 sh 'sudo systemctl'
             }
         }
-}
+        }
+        }
         stage('bill') {
             steps {
                 sh 'ps -ef'
