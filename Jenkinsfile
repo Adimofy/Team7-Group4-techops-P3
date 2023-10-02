@@ -8,10 +8,8 @@ pipeline {
             }
         }
         stage('parallel'){
-            
-        }
         parallel{
-                    stage('prosper') {
+        stage('prosper') {
             steps {
                 sh 'ps -ef'
                 sh 'sudo systemctl'
@@ -23,7 +21,8 @@ pipeline {
                 sh 'sudo systemctl'
             }
         }
-}
+        }
+        }
         stage('bill') {
             steps {
                 sh 'ps -ef'
